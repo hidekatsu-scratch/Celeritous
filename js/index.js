@@ -7,7 +7,7 @@
   const contentMap = {
     ja: {
       title: "Celeritous - プロジェクトをより高速に",
-      html: `<div class="info"><p>Scratchのプロジェクトを高速稼働</p><p>ゲーム、アニメ、計算をなめらかに</p><div class="try"><img src="/img/try.svg"><button>試してみる</button></div></div>
+      html: `<div class="info"><p>Scratchのプロジェクトを高速稼働</p><p>ゲーム、アニメ、計算をなめらかに</p><div class="try"><button><img src="/img/try.svg"><span>試してみる</span></button></div></div>
              <div class="LatestInfo"><h2>最新の情報</h2><a>更に表示</a><div class="LatestInfo_con"></div></div>
              <div class="update"><h2>最新のアップデート</h2><a>更に表示</a><div class="update_con"></div></div>`
     },
