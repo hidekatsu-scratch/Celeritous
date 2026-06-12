@@ -22,7 +22,6 @@
   document.title = currentContent.title;
   document.head.insertAdjacentHTML("beforeend", `
     <meta charset="utf-8">
-    <link rel="icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/index.css">
   `);
   document.title = currentContent.title;
