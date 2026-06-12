@@ -1,0 +1,13 @@
+.info {
+  width: 100%;
+  hight: 60%
+  background-color: #498c5f;
+}
+.try button {
+  hight: 12.5%;
+  border: none;
+  border-radius: 0;
+  background-color: #2e593c;
+  color: #ffffff;
+}
+.try 
