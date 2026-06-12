@@ -6,9 +6,10 @@
 .try button {
   height: 12.5%;
   border: none;
-  border-radius: 0;
+  border-radius: 4px;
   background-color: #2e593c;
   color: #ffffff;
 .info p {
   color: #ffffff;
 }
+  
