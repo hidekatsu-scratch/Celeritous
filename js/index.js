@@ -30,7 +30,7 @@
     mainDiv.innerHTML = currentContent.html;
   }
   const scriptTag = document.createElement("script");
-  scriptTag.src = "main.js";
+  scriptTag.src = "/js/main.js";
   scriptTag.defer = true; 
   document.head.appendChild(scriptTag);
 })();
