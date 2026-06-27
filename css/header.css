@@ -12,15 +12,17 @@ header {
 
 header ul {
   display:flex;
+  margin-top:0px;
 }
 header li {
   list-style:none;
+  margin-top:0px;
 }
 .main {
   margin-top: 55px;
 }
 header a >img {
-  height: 45px;
+  height: 40px;
 }
 header button {
   background-color: #498C5F;
