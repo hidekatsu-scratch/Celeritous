@@ -9,3 +9,9 @@ header {
   border-bottom-style: soild;
   border-bottom-eidth: 1px;
 }
+ul {
+  display:flex;
+}
+li {
+  list-style:none;
+}
