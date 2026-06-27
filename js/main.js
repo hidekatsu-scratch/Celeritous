@@ -7,17 +7,15 @@
   const contentMap = {
     ja: {
       header: `
-        <div class="header-logo"><a href="/"><img src="/img/all_logo.svg"></a></div>
-        <nav class="header-nav">
-          <a href="/editor?new=true">作る</a>
-          <a href="/project">見る</a>
-          <div class="search">
+        <ul><li><div class="header-logo"><a href="/"><img src="/img/all_logo.svg"></a></div></li>
+          <li><a href="/editor?new=true">作る</a></li>
+          <li><a href="/project">見る</a></li>
+          <li><div class="search">
             <button><img src="/img/search.svg"></button>
             <input type="text" id="serach_text_area" placeholder="検索">
-          </div>
-          <a href="/join">新規登録</a>
-          <a href="/login">ログイン</a>
-        </nav>
+          </div></li>
+          <li><a href="/join">新規登録</a></li>
+          <li><a href="/login">ログイン</a></li></ul>
       `,
       footer: `
         <div class="footer_warn"><p>このサイトはScratch、TurboWarp、PenguinMod、Scartch Teamなどと提携や協力はしていません。ご注意ください。<p></div>
