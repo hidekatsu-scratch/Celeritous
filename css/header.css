@@ -4,4 +4,8 @@ header {
   left: 0;
   background-color: #5BAB77;
   width: 100%;
+  heagit: 50px;
+  border-bottom-color: #00000001;
+  border-bottom-style: soild;
+  border-bottom-eidth: 1px;
 }
