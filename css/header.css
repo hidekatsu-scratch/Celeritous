@@ -4,17 +4,26 @@ header {
   left: 0;
   background-color: #5BAB77;
   width: 100%;
-  heagit: 50px;
+  height: 50px;
   border-bottom-color: #00000001;
   border-bottom-style: soild;
   border-bottom-eidth: 1px;
 }
-ul {
+
+header ul {
   display:flex;
 }
-li {
+header li {
   list-style:none;
 }
-main {
+.main {
   margin-top: 55px;
 }
+header a >img {
+  height: 45px;
+}
+header button {
+  background-color: #498C5F;
+}
+
+  
