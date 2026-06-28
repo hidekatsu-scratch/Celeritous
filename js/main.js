@@ -11,8 +11,8 @@
           <li><a href="/editor?new=true">作る</a></li>
           <li><a href="/project">見る</a></li>
           <li><div class="search">
-            <button><img src="/img/search.svg"></button>
-            <input type="text" id="serach_text_area" placeholder="検索">
+            <form role="search"><button><img src="/img/search.svg"></button>
+            <input type="text" id="serach_text_area" placeholder="検索"></form>
           </div></li>
           <li><a href="/join">新規登録</a></li>
           <li><a href="/login">ログイン</a></li></ul>
