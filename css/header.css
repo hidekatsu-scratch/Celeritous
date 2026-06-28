@@ -6,24 +6,36 @@ header {
   width: 100%;
   height: 50px;
   border-bottom-color: #00000001;
-  border-bottom-style: soild;
-  border-bottom-eidth: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 header ul {
-  display:flex;
-  margin-top:0px;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  height: 100%;
+  align-items: center;
 }
+
 header li {
-  list-style:none;
-  margin-top:0px;
+  list-style: none;
+  margin-top: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center; 
 }
+
 .main {
   margin-top: 55px;
 }
-header a >img {
+
+header a > img {
   height: 40px;
+  display: block; 
 }
+
 header button {
   background-color: #498C5F;
 }
