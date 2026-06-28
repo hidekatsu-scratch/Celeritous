@@ -28,7 +28,7 @@ header li {
 }
 
 .main {
-  margin-top: 55px;
+  margin-top: 50px;
 }
 
 header button {
@@ -45,26 +45,26 @@ header form {
 }
 header input {
   width: 250px;
-  height: 45px;
+  height: 35px;
   padding: 5px 15px 5px 0;
   border: none;
   box-sizing: border-box;
   font-size: 1em;
   outline: none;
+  background-color: #498C5F;
 }
 
 header input::placeholder {
-  color: #777777;
+  color: #FFFFFF;
 }
 
 header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    background-color: transparent;
     cursor: pointer;
 }
 
