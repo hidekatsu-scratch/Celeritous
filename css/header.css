@@ -5,7 +5,7 @@ header {
   background-color: #5BAB77;
   width: 100%;
   height: 50px;
-  border-bottom-color: #00000001;
+  border-bottom-color: #00000010;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
@@ -41,6 +41,9 @@ header button {
 }
 
 header a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
+}
+header a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
 }
