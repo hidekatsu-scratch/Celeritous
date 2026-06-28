@@ -40,17 +40,36 @@ header button {
   background-color: #498C5F;
 }
 
+/* --- 文字色の変更と、高さのズレを修正 --- */
 header a {
-  color: #000000;
+  color: #ffffff; 
   text-decoration: none;
+  
+  /* ↓ フォントの種類と太さを追加 */
+  font-family: sans-serif; /* ★ウロコのないシンプルなゴシック体（Sans-serif）にする */
+  font-weight: 600;        /* ★文字を若干太くする（標準は400、太めは700、その間です） */
+  
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: center;    
+  justify-content: center; 
   
-  padding: 0 15px;
-  box-sizing: border-box;
+  padding: 0 15px; 
+  box-sizing: border-box; 
 }
+
 
 header a:hover {
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* --- 画像が入っている a タグ専用の設定 --- */
+header a:has(img) {
+  padding-left: 35px; /* ★画像があるaタグだけ、左側に広い空白（35px）を作ります */
+}
+
+/* --- 画像自体のズレをリセット --- */
+header a > img {
+  height: 40px;
+  display: block; /* 画像の下に生まれる謎の隙間を完全に消します */
 }
