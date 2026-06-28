@@ -28,4 +28,7 @@ header button {
   background-color: #498C5F;
 }
 
-  
+header a {
+  color: #000000;
+  text-decoration: none;
+}
