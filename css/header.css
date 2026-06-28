@@ -33,6 +33,39 @@ header li {
 
 header button {
   background-color: #498C5F;
+  border: none;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #777777;
+  border-radius: 3px;
+}
+header input {
+  width: 250px;
+  height: 45px;
+  padding: 5px 15px 5px 0;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1em;
+  outline: none;
+}
+
+header input::placeholder {
+  color: #777777;
+}
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 header a {
@@ -45,8 +78,6 @@ header a {
   display: flex;
   align-items: center;    
   justify-content: center; 
-  
-  /* ↓ 左右の均等な黒くなる幅を指定。上下は0にします */
   padding: 0 15px; 
   box-sizing: border-box; 
 }
