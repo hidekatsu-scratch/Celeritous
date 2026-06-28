@@ -41,9 +41,16 @@ header button {
 }
 
 header a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+  padding: 0 15px;
+  box-sizing: border-box;
 }
+
 header a:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
