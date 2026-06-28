@@ -31,11 +31,6 @@ header li {
   margin-top: 55px;
 }
 
-header a > img {
-  height: 50px;
-  display: block; 
-}
-
 header button {
   background-color: #498C5F;
 }
@@ -60,16 +55,14 @@ header a:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* --- 【ここを修正】画像が入っている a タグ専用の設定 --- */
 header a:has(img) {
-  padding-left: 15px;  /* 他のボタンと同じ均等な内余白に戻す */
-  margin-left: 20px;   /* ★外側の余白にすることで、この「左の空白」はホバーしても黒くなりません */
+  padding-left: 15px;
+  margin-left: 20px;
 }
 
-/* --- 画像自体のズレを完全にリセット --- */
 header a > img {
-  height: 50px;
-  display: block;      /* 謎の下隙間を消す */
-  margin: 0;           /* 画像自体の余白を完全にリセット */
-  padding: 0;          /* 画像自体の余白を完全にリセット */
+  height: 30px;
+  width: auto;
+  display: block;
+  margin: 0;
 }
