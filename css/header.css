@@ -42,16 +42,20 @@ header form {
   overflow: hidden;
   border: 1px solid #777777;
   border-radius: 3px;
+  height:35px;
+  margin:auto 35px;
+  box-sizing: border-box;
 }
 header input {
   width: 250px;
-  height: 35px;
-  padding: 5px 15px 5px 0;
+  height: 100%;
+  padding: 5px 15px;
   border: none;
   box-sizing: border-box;
   font-size: 1em;
   outline: none;
   background-color: #498C5F;
+  color: #ffffff;
 }
 
 header input::placeholder {
@@ -63,7 +67,7 @@ header button {
     justify-content: center;
     align-items: center;
     width: 35px;
-    height: 35px;
+    height: 100%;
     border: none;
     cursor: pointer;
 }
@@ -96,4 +100,7 @@ header a > img {
   width: auto;
   display: block;
   margin: auto 0;
+}
+header button img {
+  height: 20px;
 }
