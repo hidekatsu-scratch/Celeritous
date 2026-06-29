@@ -40,7 +40,7 @@ header form {
   display: flex;
   align-items: center;
   overflow: hidden;
-  border: 1px solid #777777;
+  border: none;
   border-radius: 3px;
   height:40px;
   margin:0 15px;
@@ -59,7 +59,7 @@ header input {
 }
 
 header input::placeholder {
-  color: #FFFFFF;
+  color: #57bd78;
 }
 
 header button {
