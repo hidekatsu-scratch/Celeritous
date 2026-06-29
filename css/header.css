@@ -71,8 +71,8 @@ header button {
     border: none;
     cursor: pointer;
 }
-.seaech {
-  height:100%
+.search {
+  height:100%;
   display: flex;
   align-items: center;
 }
