@@ -43,7 +43,7 @@ header form {
   border: 1px solid #777777;
   border-radius: 3px;
   height:35px;
-  margin:auto 35px;
+  margin:0 15px;
   box-sizing: border-box;
 }
 header input {
@@ -70,6 +70,11 @@ header button {
     height: 100%;
     border: none;
     cursor: pointer;
+}
+.seaech {
+  height:100%
+  display: flex;
+  align-items: center;
 }
 
 header a {
