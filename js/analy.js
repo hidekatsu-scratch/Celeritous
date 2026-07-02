@@ -1,13 +1,16 @@
 (() => {
-  const rawHtml = `
-<!– Google tag (gtag.js) –>
-<script async src=”https://www.googletagmanager.com/gtag/js?id=G-L7VLTDKNMM”></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag(‘js’, new Date());
-gtag(‘config’, ‘G-L7VLTDKNMM‘);
-</script>
+  const head = document.head;
+  const firstChild = head.firstChild;
+  const gaScript = document.createElement('script');
+  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L7VLTDKNMM';
+  gaScript.async = true;
+  head.insertBefore(gaScript, firstChild);
+  const inlineScript = document.createElement('script');
+  inlineScript.textContent = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L7VLTDKNMM');
   `;
-  document.head.insertAdjacentHTML('afterbegin', rawHtml);
+  head.insertBefore(inlineScript, firstChild);
 })();
