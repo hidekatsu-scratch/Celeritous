@@ -52,6 +52,7 @@
   const scriptsToLoad = [
     { src: "/js/footer.js", defer: true },
     { src: "/js/maincss.js", defer: true},
+    { src: "/js/analy.js",defer: true},
   ];
   const currentContent = contentMap[lang] || contentMap["ja"];
   const headerElem = document.querySelector("header");
