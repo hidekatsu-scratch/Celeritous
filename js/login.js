@@ -12,7 +12,7 @@
   <form>
     <p>ユーザー名<br><input type="text" name="username" autocomplete="username" required></p>
     <p>パスワード<br><input type="password" name="pass" autocomplete="current-password" required></p>
-    <input type="checkbox" name="login_day">ログイン状態の保持</input>
+    <label><input type="checkbox" name="login_day">ログイン状態の保持</label><bl>
     <button type="submit">ログイン</button>
   </form>
 </div>
@@ -66,11 +66,11 @@ document.addEventListener("submit", async (e) => {
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-    data.session_long = data.login_day ? 30 : 15;
+    data.session_long = data.login_day ? 120 : 30;
     delete data.login_day;
 
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch('https://loginceleritous.xct.f5.si/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
