@@ -12,7 +12,7 @@
   <form>
     <p>ユーザー名<br><input type="text" name="username" autocomplete="username" required></p>
     <p>パスワード<br><input type="password" name="pass" autocomplete="current-password" required></p>
-    <label><input type="checkbox" name="login_day">ログイン状態の保持</label><bl>
+    <label><input type="checkbox" name="login_day">ログイン状態の保持</label><br>
     <button type="submit">ログイン</button>
   </form>
 </div>
