@@ -9,9 +9,10 @@
       title: "ログイン - Celeritous",
       html: `<div class="login">
   <h1>Celeritousにログイン</h1>
-  <form onsubmit="handleLogin(event)">
+  <form>
     <p>ユーザー名<br><input type="text" name="username" autocomplete="username" required></p>
     <p>パスワード<br><input type="password" name="pass" autocomplete="current-password" required></p>
+    <input type="checkbox" name="login_day">ログイン状態の保持</input>
     <button type="submit">ログイン</button>
   </form>
 </div>
@@ -40,3 +41,49 @@
   scriptTag.defer = true; 
   document.head.appendChild(scriptTag);
 })();
+
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const body = Object.fromEntries(formData);
+
+  const res = await fetch('/api/login', {
+    method: 'POST',
+    body: JSON.stringify(body)
+  });
+  
+  const data = await res.json();
+  console.log(data);
+});
+
+// ログイン処理
+document.addEventListener("submit", async (e) => {
+  if (e.target.tagName === "FORM") {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    data.session_long = data.login_day ? 30 : 15;
+    delete data.login_day;
+
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      
+      const result = await res.json();
+      if (result.success) {
+        alert("ログイン成功！");
+      } else {
+        alert("エラー: " + result.error);
+      }
+    } catch (err) {
+      alert("通信エラーが発生しました");
+    }
+  }
+});
