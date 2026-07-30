@@ -51,7 +51,7 @@
 
   document.head.insertAdjacentHTML("beforeend", `
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/editor.css">
   `);
 
   document.title = currentContent.title;
@@ -62,7 +62,7 @@
   }
 
   const scriptTag = document.createElement("script");
-  scriptTag.src = "/js/main.js";
+  scriptTag.src = "/js/editor-run.js";
   scriptTag.defer = true;
   document.head.appendChild(scriptTag);
 })();
