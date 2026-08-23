@@ -21,8 +21,7 @@ footer:`<p>&copy; 2026 celeritous. All rights reserved.</p><div class="footer-li
 <select name="language_select_area" id="language_select_area"></select></div>`}};
 const d=map[getLng()]||map.ja;const hd=document.querySelector("header");
 const ft=document.querySelector("footer");if(hd)hd.innerHTML=d.header;if(ft)ft.innerHTML=d.footer;})();
-;(()=>{document.head.insertAdjacentHTML("beforeend",`<link rel="stylesheet" href="/css/header.css">
-<link rel="stylesheet" href="/css/footer.css"><link rel="stylesheet" href="/css/mainhtml.css">`);
+;(()=>{document.head.insertAdjacentHTML("beforeend",`<link rel="stylesheet" href="/css/mainhtml.css">`);
 })();(()=>{const h=document.head;const f=h.firstChild;const ga=document.createElement('script');
 ga.src='https://googletagmanager.com';ga.async=true;h.insertBefore(ga,f);
 const scr=document.createElement('script');scr.textContent=`
