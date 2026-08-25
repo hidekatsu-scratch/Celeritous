@@ -13,7 +13,7 @@ footer:`<div class="footer_warn">
 <dt><span>規約</span></dt><dd><a href="/rule"><span>利用規約</span></a></dd><dd>
 <a href="/commumunity_guidelines"><span>コミュニティーガイドライン</span></a></dd><dd><a href="/guideline">
 <span>ガイドライン</span></a></dd></dl></div><div class="language_select">
-<select name="language_select_area" id="language_select_area"></select></div>`},en: {
+<select name="language_select_area" id="language_select_area"></select></div>`},en:{
 header:`<div class="header-logo"><a href="/">celeritous</a></div><nav class="header-nav">
 <a href="/features">Features</a><a href="/docs">Docs</a><a href="/community">Community</a></nav>`,
 footer:`<p>&copy; 2026 celeritous. All rights reserved.</p><div class="footer-links">
@@ -22,10 +22,8 @@ footer:`<p>&copy; 2026 celeritous. All rights reserved.</p><div class="footer-li
 const d=map[getLng()]||map.ja;const hd=document.querySelector("header");
 const ft=document.querySelector("footer");if(hd)hd.innerHTML=d.header;if(ft)ft.innerHTML=d.footer;})();
 ;(()=>{document.head.insertAdjacentHTML("beforeend",`<link rel="stylesheet" href="/css/mainhtml.css">`);
-})();(()=>{const h=document.head;const f=h.firstChild;const ga=document.createElement('script');
-ga.src='https://googletagmanager.com';ga.async=true;h.insertBefore(ga,f);
-const scr=document.createElement('script');scr.textContent=`
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L7VLTDKNMM');`;
-h.insertBefore(scr,f);const cl=document.createElement('script');cl.textContent=`
-(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://clarity.ms"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xg1nujf6h6");`;
-h.insertBefore(cl, f);})();
+})();(()=>{const h=document.head;const f=h.firstChild;const cl=document.createElement('script');cl.textContent=`
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);c[a]("config",{cookies:"none"});})(window,document,"clarity","script","xg1nujf6h6");`;
+h.insertBefore(cl,f);const cf=document.createElement('script');cf.type='module';cf.src='https://static.cloudflareinsights.com/beacon.min.js';
+cf.dataset.cfBeacon='{"token":"169051036a00407e85aa06c07dbdbebd"}';h.insertBefore(cf,f);})();
