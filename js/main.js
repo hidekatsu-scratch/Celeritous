@@ -22,8 +22,5 @@ footer:`<p>&copy; 2026 celeritous. All rights reserved.</p><div class="footer-li
 const d=map[getLng()]||map.ja;const hd=document.querySelector("header");
 const ft=document.querySelector("footer");if(hd)hd.innerHTML=d.header;if(ft)ft.innerHTML=d.footer;})();
 ;(()=>{document.head.insertAdjacentHTML("beforeend",`<link rel="stylesheet" href="/css/mainhtml.css">`);
-})();(()=>{const h=document.head;const f=h.firstChild;const cl=document.createElement('script');cl.textContent=`
-(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);c[a]("config",{cookies:"none"});})(window,document,"clarity","script","xg1nujf6h6");`;
-h.insertBefore(cl,f);const cf=document.createElement('script');cf.type='module';cf.src='https://static.cloudflareinsights.com/beacon.min.js';
+})();(()=>{const h=document.head;const f=h.firstChild;const cf=document.createElement('script');cf.type='module';cf.src='https://static.cloudflareinsights.com/beacon.min.js';
 cf.dataset.cfBeacon='{"token":"169051036a00407e85aa06c07dbdbebd"}';h.insertBefore(cf,f);})();
