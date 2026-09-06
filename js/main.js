@@ -1,5 +1,5 @@
-;(()=> {const getLng=()=>{const m=document.cookie.match(/(^|;) ?language=([^;]*)(;|$)/);
-return m?m[2]:"ja";};const map={ja:{header:`<ul><li><div class="header-logo"><a href="/">
+;(()=>{const g=()=>{return localStorage.getItem("language")||"ja";};
+const m={ja:{header:`<ul><li><div class="header-logo"><a href="/">
 <img src="/img/all_logo.svg"></a></div></li><li><a href="/editor?new=true">作る</a></li><li>
 <a href="/project">見る</a></li><li><div class="search"><form role="search"><button>
 <img src="/img/search.svg"></button><input type="text" id="serach_text_area" placeholder="検索">
@@ -19,8 +19,11 @@ header:`<div class="header-logo"><a href="/">celeritous</a></div><nav class="hea
 footer:`<p>&copy; 2026 celeritous. All rights reserved.</p><div class="footer-links">
 <a href="/privacy">Privacy Policy</a></div><div class="language_select">
 <select name="language_select_area" id="language_select_area"></select></div>`}};
-const d=map[getLng()]||map.ja;const hd=document.querySelector("header");
+const d=m[g()]||m.ja;const hd=document.querySelector("header");
 const ft=document.querySelector("footer");if(hd)hd.innerHTML=d.header;if(ft)ft.innerHTML=d.footer;})();
 ;(()=>{document.head.insertAdjacentHTML("beforeend",`<link rel="stylesheet" href="/css/mainhtml.css">`);
 })();(()=>{const h=document.head;const f=h.firstChild;const cf=document.createElement('script');cf.type='module';cf.src='https://static.cloudflareinsights.com/beacon.min.js';
 cf.dataset.cfBeacon='{"token":"169051036a00407e85aa06c07dbdbebd"}';h.insertBefore(cf,f);})();
+(()=>{const lng=localStorage.getItem("language")||"ja";const s=document.getElementById("language_select_area");
+if(s){[["ja","日本語"],["en","English"]].forEach(([v, t])=>s.add(new Option(t, v)));s.value=lng;
+s.onchange=()=>{localStorage.setItem("language",s.value);location.reload();};}})();
