@@ -1,6 +1,7 @@
 * {
-  font-family: "sans-serif";
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -75,11 +76,10 @@ header button {
 header a {
   color: #ffffff; 
   text-decoration: none;
-  font-family: sans-serif;
   font-weight: 600;
   height: 100%;
   display: flex;
-  align-items: center;    
+  align-items: center;
   justify-content: center; 
   padding: 0 15px; 
   box-sizing: border-box; 
@@ -104,22 +104,23 @@ header button img {
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
 }
 .footer_link {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
+  margin-bottom:20px;
 }
 .language_select {
   display: flex;
-  justify-context: center;
+  justify-content: center;
+  width:100%;
 }
 #language_select_area {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  windth:100px;
+  width:120px;
   padding: 10px 35px 10px 15px; 
   cursor: pointer;
   font-size: 14px;
@@ -127,7 +128,24 @@ body {
   background-color: #ffffff;
   border: 1px solid #5BAB77;
   border-radius: 3px;
-  background-image: "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20fill%3D%27%23666666%27%20d%3D%27M7%2010l5%205%205-5z%27%2F%3E%3C%2Fsvg%3E";
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20fill%3D%27%23666666%27%20d%3D%27M7%2010l5%205%205-5z%27%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.footer_link dl, .footer_link dt, .footer_link dd {
+  margin: 0;
+  padding: 0;
+}
+.footer_link dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer_link dd {
+  margin-bottom: 8px;
 }
